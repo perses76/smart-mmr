@@ -1,0 +1,4 @@
+glom==19.2.0
+pytest==4.3.0
+PyYAML==3.13
+Flask==1.0.*

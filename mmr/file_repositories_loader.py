@@ -3,8 +3,15 @@ import yaml
 from . import echidna
 from . import repositories as reps
 
+default_path = os.path.abspath(
+    os.path.join(
+        os.path.dirname(__file__),
+        'data'
+    )
+)
 
-def get_repositories(path=None):
+
+def get_repositories(path=default_path):
     loader = get_entities_loader(path)
     return reps.Repositories(
         airlines=loader('airline', echidna.Airline),

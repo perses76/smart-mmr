@@ -15,6 +15,7 @@ HALT = Score("halt")
 BINGO = Score("bingo")
 ZERO = Score(0)
 
+
 class NullTracker():
     def log(self, message):
         pass
@@ -34,13 +35,16 @@ class Tracker():
 
 def evaluate(ctx, rules, init_score=ZERO):
     total_score = init_score
+    origin_tracker  = ctx.tracker
     for rule in rules:
+        ctx.tracker = Tracker()
         score = rule.evaluate(ctx)
-        ctx.tracker.log({"rule": rule.code, "score": score})
+        origin_tracker.log({"rule": rule.code, "score": score, 'steps': ctx.tracker.steps})
         if score is not None:
             if score == HALT or score == BINGO:
                 return score
             total_score = score + total_score
+    ctx.tracker = origin_tracker
     return total_score
 
 
@@ -64,7 +68,6 @@ class Program():
 
     def evaluate(self, ctx):
         return evaluate(ctx, self.rules)
-
 
 class Channel():
     def __init__(self, code, rules=None):
