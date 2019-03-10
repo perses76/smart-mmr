@@ -1,0 +1,50 @@
+items:
+- id: AMADEUS_AVIACENTER
+  name: AMADEUS_AVIACENTER
+- id: AMADEUS_FLY_UNITED
+  name: AMADEUS_FLY_UNITED
+- id: AMADEUS_F_NESS
+  name: AMADEUS_F_NESS
+- id: AMADEUS_KIWI
+  name: AMADEUS_KIWI
+- id: AMADEUS_LIS_IL
+  name: AMADEUS_LIS_IL
+- id: AMADEUS_RHT
+  name: AMADEUS_RHT
+- id: AMADEUS_SKYBIRD
+  name: AMADEUS_SKYBIRD
+- id: AMADEUS_TALMA_IL
+  name: AMADEUS_TALMA_IL
+- id: BRAVOFLY
+  name: BRAVOFLY
+- id: DY
+  name: DY
+- id: DY_AGENCY
+  name: DY_AGENCY
+- id: DY_API
+  name: DY_API
+- id: IT
+  name: IT
+- id: OZ
+  name: OZ
+- id: TC
+  name: TC
+- id: TRAVELPORT
+  name: TRAVELPORT
+- id: TRAVELPORT_CONSOLIDADOR_PT
+  name: TRAVELPORT_CONSOLIDADOR_PT
+- id: TRAVELPORT_KIWI
+  name: TRAVELPORT_KIWI
+- id: TRAVELPORT_MULTIPASS
+  name: TRAVELPORT_MULTIPASS
+- id: TRAVELPORT_RHT
+  name: TRAVELPORT_RHT
+- id: U2
+  name: U2
+- id: U2_MOBILE
+  name: U2_MOBILE
+- id: YPSILON
+  name: YPSILON
+limit: 0
+offset: 0
+uri: /booking-channels

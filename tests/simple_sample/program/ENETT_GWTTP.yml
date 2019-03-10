@@ -1,0 +1,5 @@
+scheme: MC
+currencies: [EUR]
+rules:
+  - type: GenerationFeeRule
+    percent: 0.05

@@ -1,0 +1,6 @@
+name: DY
+rules:
+  - code: VISA_SCHEME_SURCHARGE
+    type: SchemeSurchargeRule
+    percent: 0.1
+    scheme: VISA
