@@ -3,6 +3,12 @@ import mmr
 from flask import Flask, render_template, request
 app = Flask(__name__)
 
+@app.route("/control-panel")
+def control_panel():
+    data = {}
+    return render_template('control_panel.html', **data)
+
+
 @app.route("/")
 def search():
     data = {
